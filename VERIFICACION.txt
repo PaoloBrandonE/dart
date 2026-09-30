@@ -11,3 +11,4 @@ Fechas: rechazo de fechas imposibles y aceptacion de fecha bisiesta correctos.
 Fin de entrada: salida ordenada desde menu y operaciones.
 Duplicados: comprobados mayusculas, tildes, espacios y ambos tipos de tarea; se conserva el titulo original y se permite registrarlo nuevamente tras eliminarlo.
 Pendientes y prioridades: verificados ambos tipos de tarea, prioridades invalidas, lista vacia, todas completadas, orden alta-media-baja, indices al completar/eliminar tras ordenar, duplicados y fin de entrada.
+Correccion de codificacion: pruebas con entrada UTF-8 de tildes, mayusculas, espacios y acentos combinados; duplicados rechazados incluso si la tarea original esta completada. Se conservan tildes en titulo y categoria.

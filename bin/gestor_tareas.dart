@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 // Fase 1: datos de una tarea.
@@ -56,7 +57,8 @@ List<Tarea> tareas = [];
 
 String? leerTexto(String mensaje) {
   stdout.write(mensaje);
-  return stdin.readLineSync()?.trim();
+  // Leemos en UTF-8 para conservar las tildes que llegan de la terminal.
+  return stdin.readLineSync(encoding: utf8)?.trim();
 }
 
 String normalizarTitulo(String titulo) {
