@@ -1,0 +1,139 @@
+
+===== GESTOR DE TAREAS =====
+1. Agregar tarea
+2. Agregar tarea con vencimiento
+3. Ver tareas
+4. Marcar como completada
+5. Eliminar tarea
+6. Ver estadisticas
+0. Salir
+Elige una opcion: Titulo de la tarea: Categoria (Enter para omitir): Tarea agregada correctamente.
+
+===== GESTOR DE TAREAS =====
+1. Agregar tarea
+2. Agregar tarea con vencimiento
+3. Ver tareas
+4. Marcar como completada
+5. Eliminar tarea
+6. Ver estadisticas
+0. Salir
+Elige una opcion: Titulo de la tarea: Categoria (Enter para omitir): Fecha de vencimiento (dd/mm/aaaa): Tarea con vencimiento agregada correctamente.
+
+===== GESTOR DE TAREAS =====
+1. Agregar tarea
+2. Agregar tarea con vencimiento
+3. Ver tareas
+4. Marcar como completada
+5. Eliminar tarea
+6. Ver estadisticas
+0. Salir
+Elige una opcion: Titulo de la tarea: Categoria (Enter para omitir): Tarea agregada correctamente.
+
+===== GESTOR DE TAREAS =====
+1. Agregar tarea
+2. Agregar tarea con vencimiento
+3. Ver tareas
+4. Marcar como completada
+5. Eliminar tarea
+6. Ver estadisticas
+0. Salir
+Elige una opcion: --- LISTA DE TAREAS (3) ---
+[1] [ ] Estudiar Dart  (Universidad)
+[2] [ ] Entregar guia  (Universidad)  vence: 30/09/2026
+[3] [ ] Comprar cuaderno  (Sin categoria)
+
+===== GESTOR DE TAREAS =====
+1. Agregar tarea
+2. Agregar tarea con vencimiento
+3. Ver tareas
+4. Marcar como completada
+5. Eliminar tarea
+6. Ver estadisticas
+0. Salir
+Elige una opcion: --- LISTA DE TAREAS (3) ---
+[1] [ ] Estudiar Dart  (Universidad)
+[2] [ ] Entregar guia  (Universidad)  vence: 30/09/2026
+[3] [ ] Comprar cuaderno  (Sin categoria)
+Numero de la tarea a completar: Tarea marcada como completada.
+
+===== GESTOR DE TAREAS =====
+1. Agregar tarea
+2. Agregar tarea con vencimiento
+3. Ver tareas
+4. Marcar como completada
+5. Eliminar tarea
+6. Ver estadisticas
+0. Salir
+Elige una opcion: --- LISTA DE TAREAS (3) ---
+[1] [X] Estudiar Dart  (Universidad)
+[2] [ ] Entregar guia  (Universidad)  vence: 30/09/2026
+[3] [ ] Comprar cuaderno  (Sin categoria)
+Numero de la tarea a completar: La tarea ya estaba completada.
+
+===== GESTOR DE TAREAS =====
+1. Agregar tarea
+2. Agregar tarea con vencimiento
+3. Ver tareas
+4. Marcar como completada
+5. Eliminar tarea
+6. Ver estadisticas
+0. Salir
+Elige una opcion: --- ESTADISTICAS ---
+Total de tareas : 3
+Completadas     : 1
+Pendientes      : 2
+Por categoria:
+  Universidad: 2
+  Sin categoria: 1
+
+===== GESTOR DE TAREAS =====
+1. Agregar tarea
+2. Agregar tarea con vencimiento
+3. Ver tareas
+4. Marcar como completada
+5. Eliminar tarea
+6. Ver estadisticas
+0. Salir
+Elige una opcion: --- LISTA DE TAREAS (3) ---
+[1] [X] Estudiar Dart  (Universidad)
+[2] [ ] Entregar guia  (Universidad)  vence: 30/09/2026
+[3] [ ] Comprar cuaderno  (Sin categoria)
+Numero de la tarea a eliminar: Se elimino: Entregar guia
+
+===== GESTOR DE TAREAS =====
+1. Agregar tarea
+2. Agregar tarea con vencimiento
+3. Ver tareas
+4. Marcar como completada
+5. Eliminar tarea
+6. Ver estadisticas
+0. Salir
+Elige una opcion: --- LISTA DE TAREAS (2) ---
+[1] [X] Estudiar Dart  (Universidad)
+[2] [ ] Comprar cuaderno  (Sin categoria)
+
+===== GESTOR DE TAREAS =====
+1. Agregar tarea
+2. Agregar tarea con vencimiento
+3. Ver tareas
+4. Marcar como completada
+5. Eliminar tarea
+6. Ver estadisticas
+0. Salir
+Elige una opcion: --- ESTADISTICAS ---
+Total de tareas : 2
+Completadas     : 1
+Pendientes      : 1
+Por categoria:
+  Universidad: 1
+  Sin categoria: 1
+
+===== GESTOR DE TAREAS =====
+1. Agregar tarea
+2. Agregar tarea con vencimiento
+3. Ver tareas
+4. Marcar como completada
+5. Eliminar tarea
+6. Ver estadisticas
+0. Salir
+Elige una opcion: Hasta pronto.

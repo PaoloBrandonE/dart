@@ -1,0 +1,6 @@
+name: gestor_tareas
+description: Gestor de tareas de consola para la Guia de Aplicacion 02.
+version: 1.0.0
+publish_to: none
+environment:
+  sdk: '>=3.0.0 <4.0.0'
