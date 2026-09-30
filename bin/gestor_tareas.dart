@@ -42,11 +42,42 @@ String? leerTexto(String mensaje) {
   return stdin.readLineSync()?.trim();
 }
 
+String normalizarTitulo(String titulo) {
+  String normalizado = titulo.toLowerCase();
+  Map<String, String> sinTildes = {
+    'á': 'a',
+    'é': 'e',
+    'í': 'i',
+    'ó': 'o',
+    'ú': 'u',
+    'ü': 'u',
+  };
+  sinTildes.forEach((letra, reemplazo) {
+    normalizado = normalizado.replaceAll(letra, reemplazo);
+  });
+  // Tambien quitamos el acento si viene separado de la vocal al copiar texto.
+  normalizado = normalizado.replaceAll('\u0301', '');
+  // Solo cambiamos el texto para comparar; el titulo original se conserva.
+  return normalizado.replaceAll(RegExp(r'\s+'), '');
+}
+
+bool existeTarea(String titulo) {
+  String tituloBuscado = normalizarTitulo(titulo);
+  for (Tarea tarea in tareas) {
+    if (normalizarTitulo(tarea.titulo) == tituloBuscado) return true;
+  }
+  return false;
+}
+
 void agregarTarea() {
   String? titulo = leerTexto('Titulo de la tarea: ');
   if (titulo == null) return;
   if (titulo.isEmpty) {
     print('El titulo no puede estar vacio.');
+    return;
+  }
+  if (existeTarea(titulo)) {
+    print('Ya existe una tarea con ese titulo.');
     return;
   }
   String? entrada = leerTexto('Categoria (Enter para omitir): ');
@@ -75,6 +106,10 @@ void agregarTareaConVencimiento() {
   if (titulo == null) return;
   if (titulo.isEmpty) {
     print('El titulo no puede estar vacio.');
+    return;
+  }
+  if (existeTarea(titulo)) {
+    print('Ya existe una tarea con ese titulo.');
     return;
   }
   String? entrada = leerTexto('Categoria (Enter para omitir): ');

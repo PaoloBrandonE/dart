@@ -9,3 +9,4 @@ Flujo completo: agregar ambos tipos, listar, completar, eliminar y estadisticas 
 Validaciones: lista vacia, titulo vacio, opcion incorrecta e indices invalidos correctos.
 Fechas: rechazo de fechas imposibles y aceptacion de fecha bisiesta correctos.
 Fin de entrada: salida ordenada desde menu y operaciones.
+Duplicados: comprobados mayusculas, tildes, espacios y ambos tipos de tarea; se conserva el titulo original y se permite registrarlo nuevamente tras eliminarlo.

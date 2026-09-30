@@ -32,3 +32,5 @@ Las fases están señaladas en `bin/gestor_tareas.dart` y fueron ejecutadas prog
 - Los datos se guardan en memoria mientras el programa está abierto; al salir se pierden.
 
 `VERIFICACION.txt` resume las comprobaciones realizadas y `ejemplo_ejecucion.txt` contiene la salida real de una sesión de prueba.
+
+No se permiten titulos duplicados, incluso entre tareas simples y con vencimiento. Para comparar se convierten a minusculas, se reemplazan vocales con tilde y se quitan todos los espacios. El titulo mostrado conserva su escritura original.
