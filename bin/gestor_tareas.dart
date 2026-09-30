@@ -5,15 +5,31 @@ class Tarea {
   String titulo;
   bool completada;
   String? categoria;
+  int prioridad;
 
-  Tarea({required this.titulo, this.categoria, this.completada = false});
+  Tarea(
+      {required this.titulo,
+      this.categoria,
+      this.completada = false,
+      this.prioridad = 2});
+
+  String get nombrePrioridad {
+    switch (prioridad) {
+      case 1:
+        return 'Alta';
+      case 3:
+        return 'Baja';
+      default:
+        return 'Media';
+    }
+  }
 
   String get marca => completada ? '[X]' : '[ ]';
 
   String descripcion() {
     // Si no se escribio una categoria, mostramos este texto.
     String cat = categoria ?? 'Sin categoria';
-    return '$marca $titulo  ($cat)';
+    return '$marca $titulo  ($cat)  Prioridad: $nombrePrioridad';
   }
 }
 
@@ -25,7 +41,8 @@ class TareaConVencimiento extends Tarea {
     required String titulo,
     required this.fechaVencimiento,
     String? categoria,
-  }) : super(titulo: titulo, categoria: categoria);
+    int prioridad = 2,
+  }) : super(titulo: titulo, categoria: categoria, prioridad: prioridad);
 
   @override
   String descripcion() {
@@ -69,6 +86,18 @@ bool existeTarea(String titulo) {
   return false;
 }
 
+int? pedirPrioridad() {
+  while (true) {
+    String? entrada = leerTexto('Prioridad (1 Alta, 2 Media, 3 Baja): ');
+    if (entrada == null) return null;
+    int? prioridad = int.tryParse(entrada);
+    if (prioridad != null && prioridad >= 1 && prioridad <= 3) {
+      return prioridad;
+    }
+    print('Prioridad invalida. Escribe 1, 2 o 3.');
+  }
+}
+
 void agregarTarea() {
   String? titulo = leerTexto('Titulo de la tarea: ');
   if (titulo == null) return;
@@ -83,7 +112,9 @@ void agregarTarea() {
   String? entrada = leerTexto('Categoria (Enter para omitir): ');
   if (entrada == null) return;
   String? categoria = entrada.isEmpty ? null : entrada;
-  tareas.add(Tarea(titulo: titulo, categoria: categoria));
+  int? prioridad = pedirPrioridad();
+  if (prioridad == null) return;
+  tareas.add(Tarea(titulo: titulo, categoria: categoria, prioridad: prioridad));
   print('Tarea agregada correctamente.');
 }
 
@@ -121,10 +152,13 @@ void agregarTareaConVencimiento() {
     print('Fecha invalida. Usa dd/mm/aaaa y una fecha que exista.');
     return;
   }
+  int? prioridad = pedirPrioridad();
+  if (prioridad == null) return;
   tareas.add(TareaConVencimiento(
     titulo: titulo,
     categoria: categoria,
     fechaVencimiento: fecha,
+    prioridad: prioridad,
   ));
   print('Tarea con vencimiento agregada correctamente.');
 }
@@ -138,6 +172,34 @@ void listarTareas() {
   for (int i = 0; i < tareas.length; i++) {
     print('[${i + 1}] ${tareas[i].descripcion()}');
   }
+}
+
+void verTareasPendientes() {
+  print('--- TAREAS PENDIENTES ---');
+  bool hayPendientes = false;
+  for (int i = 0; i < tareas.length; i++) {
+    if (!tareas[i].completada) {
+      // Conservamos el numero de la lista completa para evitar confusiones.
+      print('[${i + 1}] ${tareas[i].descripcion()}');
+      hayPendientes = true;
+    }
+  }
+  if (!hayPendientes) print('No hay tareas pendientes.');
+}
+
+void ordenarPorPrioridad() {
+  if (tareas.isEmpty) {
+    print('No hay tareas para ordenar.');
+    return;
+  }
+  // Los numeros menores tienen mayor prioridad: alta, media y baja.
+  tareas.sort((a, b) {
+    int comparacion = a.prioridad.compareTo(b.prioridad);
+    if (comparacion != 0) return comparacion;
+    return normalizarTitulo(a.titulo).compareTo(normalizarTitulo(b.titulo));
+  });
+  print('Tareas ordenadas por prioridad. La numeracion se ha actualizado.');
+  listarTareas();
 }
 
 // Fase 4: completar y eliminar usando el numero de la lista.
@@ -207,6 +269,8 @@ void mostrarMenu() {
   print('4. Marcar como completada');
   print('5. Eliminar tarea');
   print('6. Ver estadisticas');
+  print('7. Ver solo tareas pendientes');
+  print('8. Ordenar por prioridad');
   print('0. Salir');
 }
 
@@ -238,6 +302,12 @@ void main() {
         break;
       case '6':
         verEstadisticas();
+        break;
+      case '7':
+        verTareasPendientes();
+        break;
+      case '8':
+        ordenarPorPrioridad();
         break;
       case '0':
         ejecutando = false;

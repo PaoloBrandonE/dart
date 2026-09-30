@@ -1,3 +1,16 @@
+
+===== GESTOR DE TAREAS =====
+1. Agregar tarea
+2. Agregar tarea con vencimiento
+3. Ver tareas
+4. Marcar como completada
+5. Eliminar tarea
+6. Ver estadisticas
+7. Ver solo tareas pendientes
+8. Ordenar por prioridad
+0. Salir
+Elige una opcion: --- TAREAS PENDIENTES ---
+No hay tareas pendientes.
 
 ===== GESTOR DE TAREAS =====
 1. Agregar tarea
@@ -6,8 +19,10 @@
 4. Marcar como completada
 5. Eliminar tarea
 6. Ver estadisticas
+7. Ver solo tareas pendientes
+8. Ordenar por prioridad
 0. Salir
-Elige una opcion: Titulo de la tarea: Categoria (Enter para omitir): Tarea agregada correctamente.
+Elige una opcion: No hay tareas para ordenar.
 
 ===== GESTOR DE TAREAS =====
 1. Agregar tarea
@@ -16,8 +31,13 @@ Elige una opcion: Titulo de la tarea: Categoria (Enter para omitir): Tarea agreg
 4. Marcar como completada
 5. Eliminar tarea
 6. Ver estadisticas
+7. Ver solo tareas pendientes
+8. Ordenar por prioridad
 0. Salir
-Elige una opcion: Titulo de la tarea: Categoria (Enter para omitir): Fecha de vencimiento (dd/mm/aaaa): Tarea con vencimiento agregada correctamente.
+Elige una opcion: Titulo de la tarea: Categoria (Enter para omitir): Prioridad (1 Alta, 2 Media, 3 Baja): Prioridad invalida. Escribe 1, 2 o 3.
+Prioridad (1 Alta, 2 Media, 3 Baja): Prioridad invalida. Escribe 1, 2 o 3.
+Prioridad (1 Alta, 2 Media, 3 Baja): Prioridad invalida. Escribe 1, 2 o 3.
+Prioridad (1 Alta, 2 Media, 3 Baja): Tarea agregada correctamente.
 
 ===== GESTOR DE TAREAS =====
 1. Agregar tarea
@@ -26,8 +46,10 @@ Elige una opcion: Titulo de la tarea: Categoria (Enter para omitir): Fecha de ve
 4. Marcar como completada
 5. Eliminar tarea
 6. Ver estadisticas
+7. Ver solo tareas pendientes
+8. Ordenar por prioridad
 0. Salir
-Elige una opcion: Titulo de la tarea: Categoria (Enter para omitir): Tarea agregada correctamente.
+Elige una opcion: Titulo de la tarea: Categoria (Enter para omitir): Fecha de vencimiento (dd/mm/aaaa): Prioridad (1 Alta, 2 Media, 3 Baja): Tarea con vencimiento agregada correctamente.
 
 ===== GESTOR DE TAREAS =====
 1. Agregar tarea
@@ -36,24 +58,25 @@ Elige una opcion: Titulo de la tarea: Categoria (Enter para omitir): Tarea agreg
 4. Marcar como completada
 5. Eliminar tarea
 6. Ver estadisticas
+7. Ver solo tareas pendientes
+8. Ordenar por prioridad
+0. Salir
+Elige una opcion: Titulo de la tarea: Categoria (Enter para omitir): Prioridad (1 Alta, 2 Media, 3 Baja): Tarea agregada correctamente.
+
+===== GESTOR DE TAREAS =====
+1. Agregar tarea
+2. Agregar tarea con vencimiento
+3. Ver tareas
+4. Marcar como completada
+5. Eliminar tarea
+6. Ver estadisticas
+7. Ver solo tareas pendientes
+8. Ordenar por prioridad
 0. Salir
 Elige una opcion: --- LISTA DE TAREAS (3) ---
-[1] [ ] Estudiar Dart  (Universidad)
-[2] [ ] Entregar guia  (Universidad)  vence: 30/09/2026
-[3] [ ] Comprar cuaderno  (Sin categoria)
-
-===== GESTOR DE TAREAS =====
-1. Agregar tarea
-2. Agregar tarea con vencimiento
-3. Ver tareas
-4. Marcar como completada
-5. Eliminar tarea
-6. Ver estadisticas
-0. Salir
-Elige una opcion: --- LISTA DE TAREAS (3) ---
-[1] [ ] Estudiar Dart  (Universidad)
-[2] [ ] Entregar guia  (Universidad)  vence: 30/09/2026
-[3] [ ] Comprar cuaderno  (Sin categoria)
+[1] [ ] Baja  (Sin categoria)  Prioridad: Baja
+[2] [ ] Alta  (Curso)  Prioridad: Alta  vence: 30/09/2026
+[3] [ ] Media  (Sin categoria)  Prioridad: Media
 Numero de la tarea a completar: Tarea marcada como completada.
 
 ===== GESTOR DE TAREAS =====
@@ -63,12 +86,44 @@ Numero de la tarea a completar: Tarea marcada como completada.
 4. Marcar como completada
 5. Eliminar tarea
 6. Ver estadisticas
+7. Ver solo tareas pendientes
+8. Ordenar por prioridad
+0. Salir
+Elige una opcion: --- TAREAS PENDIENTES ---
+[1] [ ] Baja  (Sin categoria)  Prioridad: Baja
+[3] [ ] Media  (Sin categoria)  Prioridad: Media
+
+===== GESTOR DE TAREAS =====
+1. Agregar tarea
+2. Agregar tarea con vencimiento
+3. Ver tareas
+4. Marcar como completada
+5. Eliminar tarea
+6. Ver estadisticas
+7. Ver solo tareas pendientes
+8. Ordenar por prioridad
+0. Salir
+Elige una opcion: Tareas ordenadas por prioridad. La numeracion se ha actualizado.
+--- LISTA DE TAREAS (3) ---
+[1] [X] Alta  (Curso)  Prioridad: Alta  vence: 30/09/2026
+[2] [ ] Media  (Sin categoria)  Prioridad: Media
+[3] [ ] Baja  (Sin categoria)  Prioridad: Baja
+
+===== GESTOR DE TAREAS =====
+1. Agregar tarea
+2. Agregar tarea con vencimiento
+3. Ver tareas
+4. Marcar como completada
+5. Eliminar tarea
+6. Ver estadisticas
+7. Ver solo tareas pendientes
+8. Ordenar por prioridad
 0. Salir
 Elige una opcion: --- LISTA DE TAREAS (3) ---
-[1] [X] Estudiar Dart  (Universidad)
-[2] [ ] Entregar guia  (Universidad)  vence: 30/09/2026
-[3] [ ] Comprar cuaderno  (Sin categoria)
-Numero de la tarea a completar: La tarea ya estaba completada.
+[1] [X] Alta  (Curso)  Prioridad: Alta  vence: 30/09/2026
+[2] [ ] Media  (Sin categoria)  Prioridad: Media
+[3] [ ] Baja  (Sin categoria)  Prioridad: Baja
+Numero de la tarea a completar: Tarea marcada como completada.
 
 ===== GESTOR DE TAREAS =====
 1. Agregar tarea
@@ -77,14 +132,11 @@ Numero de la tarea a completar: La tarea ya estaba completada.
 4. Marcar como completada
 5. Eliminar tarea
 6. Ver estadisticas
+7. Ver solo tareas pendientes
+8. Ordenar por prioridad
 0. Salir
-Elige una opcion: --- ESTADISTICAS ---
-Total de tareas : 3
-Completadas     : 1
-Pendientes      : 2
-Por categoria:
-  Universidad: 2
-  Sin categoria: 1
+Elige una opcion: --- TAREAS PENDIENTES ---
+[3] [ ] Baja  (Sin categoria)  Prioridad: Baja
 
 ===== GESTOR DE TAREAS =====
 1. Agregar tarea
@@ -93,12 +145,14 @@ Por categoria:
 4. Marcar como completada
 5. Eliminar tarea
 6. Ver estadisticas
+7. Ver solo tareas pendientes
+8. Ordenar por prioridad
 0. Salir
 Elige una opcion: --- LISTA DE TAREAS (3) ---
-[1] [X] Estudiar Dart  (Universidad)
-[2] [ ] Entregar guia  (Universidad)  vence: 30/09/2026
-[3] [ ] Comprar cuaderno  (Sin categoria)
-Numero de la tarea a eliminar: Se elimino: Entregar guia
+[1] [X] Alta  (Curso)  Prioridad: Alta  vence: 30/09/2026
+[2] [X] Media  (Sin categoria)  Prioridad: Media
+[3] [ ] Baja  (Sin categoria)  Prioridad: Baja
+Numero de la tarea a eliminar: Se elimino: Alta
 
 ===== GESTOR DE TAREAS =====
 1. Agregar tarea
@@ -107,26 +161,15 @@ Numero de la tarea a eliminar: Se elimino: Entregar guia
 4. Marcar como completada
 5. Eliminar tarea
 6. Ver estadisticas
-0. Salir
-Elige una opcion: --- LISTA DE TAREAS (2) ---
-[1] [X] Estudiar Dart  (Universidad)
-[2] [ ] Comprar cuaderno  (Sin categoria)
-
-===== GESTOR DE TAREAS =====
-1. Agregar tarea
-2. Agregar tarea con vencimiento
-3. Ver tareas
-4. Marcar como completada
-5. Eliminar tarea
-6. Ver estadisticas
+7. Ver solo tareas pendientes
+8. Ordenar por prioridad
 0. Salir
 Elige una opcion: --- ESTADISTICAS ---
 Total de tareas : 2
 Completadas     : 1
 Pendientes      : 1
 Por categoria:
-  Universidad: 1
-  Sin categoria: 1
+  Sin categoria: 2
 
 ===== GESTOR DE TAREAS =====
 1. Agregar tarea
@@ -135,5 +178,19 @@ Por categoria:
 4. Marcar como completada
 5. Eliminar tarea
 6. Ver estadisticas
+7. Ver solo tareas pendientes
+8. Ordenar por prioridad
+0. Salir
+Elige una opcion: Titulo de la tarea: Ya existe una tarea con ese titulo.
+
+===== GESTOR DE TAREAS =====
+1. Agregar tarea
+2. Agregar tarea con vencimiento
+3. Ver tareas
+4. Marcar como completada
+5. Eliminar tarea
+6. Ver estadisticas
+7. Ver solo tareas pendientes
+8. Ordenar por prioridad
 0. Salir
 Elige una opcion: Hasta pronto.

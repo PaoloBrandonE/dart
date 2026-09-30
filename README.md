@@ -34,3 +34,12 @@ Las fases están señaladas en `bin/gestor_tareas.dart` y fueron ejecutadas prog
 `VERIFICACION.txt` resume las comprobaciones realizadas y `ejemplo_ejecucion.txt` contiene la salida real de una sesión de prueba.
 
 No se permiten titulos duplicados, incluso entre tareas simples y con vencimiento. Para comparar se convierten a minusculas, se reemplazan vocales con tilde y se quitan todos los espacios. El titulo mostrado conserva su escritura original.
+
+## Pendientes y prioridades
+
+Al registrar cualquiera de los dos tipos de tarea se pide una prioridad: 1 alta, 2 media o 3 baja. Si la entrada es incorrecta se vuelve a pedir. La prioridad aparece en la descripcion.
+
+- Opcion 7: muestra solo pendientes, conservando sus numeros de la lista completa.
+- Opcion 8: ordena todas las tareas de alta a baja prioridad y muestra la lista actualizada. En empates se ordenan por titulo. Los numeros cambian al ordenar; completar y eliminar usan la nueva numeracion.
+
+El ordenamiento se aplica al elegir la opcion 8. Las nuevas tareas se agregan al final; se puede volver a ordenar desde el menu.
